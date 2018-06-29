@@ -16,10 +16,10 @@
         @endforelse
         */ ?>
         <div class="col-xs-12">
-            <h1 class="page-header">CRUD Laravel y Vuejs</h1>
+            <h1 class="page-header">Laravel y Vuejs</h1>
         </div>
         <div class="col-sm-7">
-            <a href="#" class="btn btn-primary pull-right mb-4">Nueva Tarea</a>
+            <a href="#" class="btn btn-primary pull-right mb-4">New TODO</a>
             <table class="table table-hover table-sprite">
                 <thead>
                     <tr>
@@ -35,10 +35,10 @@
                         <td width="10px" >@{{ keep.id }}</td>
                         <td>@{{ keep.name_TODO}}</td>
                         <td width="10px" >
-                            <a href="#" class="btn btn-warning btm-sm">Editar</a>
+                            <a href="#" class="btn btn-warning btm-sm">Edit</a>
                         </td>
                         <td>
-                            <a href="#" class="btn btn-danger btn-sm">Eliminar</a>
+                            <a href="#" class="btn btn-danger btn-sm">Delete</a>
                         </td>
                     </tr>
                 </tbody>
