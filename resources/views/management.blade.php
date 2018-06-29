@@ -19,7 +19,9 @@
             <h1 class="page-header">Laravel y Vuejs</h1>
         </div>
         <div class="col-sm-7">
-            <a href="#" class="btn btn-primary pull-right mb-4">New TODO</a>
+            <a href="#" class="btn btn-primary pull-right mb-4" data-toggle="modal" data-target="#create" >
+                New TODO
+            </a>
             <table class="table table-hover table-striped">
                 <thead>
                     <tr>
@@ -43,6 +45,7 @@
                     </tr>
                 </tbody>
             </table>
+            @include('create')
         </div>
         <div class="col-sm-5">
             <pre>
