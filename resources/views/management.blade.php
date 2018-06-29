@@ -30,10 +30,10 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td class="checkbox"><input type="checkbox" value="1"></td>
-                        <td width="10px" >1</td>
-                        <td>Tarea 1</td>
+                    <tr v-for="keep in keeps">
+                        <td class="checkbox"><input type="checkbox" value="@{{ keep.id }}"></td>
+                        <td width="10px" >@{{ keep.id }}</td>
+                        <td>@{{ keep.name_TODO}}</td>
                         <td width="10px" >
                             <a href="#" class="btn btn-warning btm-sm">Editar</a>
                         </td>

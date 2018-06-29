@@ -15,7 +15,7 @@ class TaskController extends Controller
      */
     public function index(Request $request)
     {
-        $tasks = Todoso::orderBy('id', 'DESC')->paginate(2);
+        /*$tasks = Todoso::orderBy('id', 'DESC')->paginate(5);
         return [
             'pagination' => [
                 'total'         => $tasks->total(),
@@ -26,7 +26,9 @@ class TaskController extends Controller
                 'to'            => $tasks->lastItem(),
             ],
             'tasks' => $tasks
-        ];
+        ];*/
+        $tasks = Todoso::get();
+        return $tasks;
     }
     /**
      * Show the form for editing the specified resource
