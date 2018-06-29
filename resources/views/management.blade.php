@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div id="main" class="container">
+<div id="crud" class="container">
     <div class="row flex-column">
         <?php /**
         @forelse ($todosos as $todoso)
