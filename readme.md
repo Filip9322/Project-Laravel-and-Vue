@@ -1,7 +1,7 @@
 # MANAGEMENT APP LARAVEL & VUEJS
 
 An Manamgement to create TODOS, with the tools create, edit , delete and check.
-![alt text](https://raw.githubusercontent.com/filip9322/Project-Laravel-and-Vue/branch/public/images/App.png)
+![alt Screen App](https://raw.githubusercontent.com/Filip9322/Project-Laravel-and-Vue/master/public/images/App.png)
 
 ## DOCS:
 
