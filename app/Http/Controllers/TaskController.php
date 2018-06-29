@@ -27,7 +27,7 @@ class TaskController extends Controller
             ],
             'tasks' => $tasks
         ];*/
-        $tasks = Todoso::get();
+        $tasks = Todoso::orderBy('id', 'DESC')->get();
         return $tasks;
     }
     /**
@@ -51,7 +51,7 @@ class TaskController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'keep' => 'required'
+            'name_TODO' => 'required'
         ]);
         Todoso::create($request->all());
         return;
