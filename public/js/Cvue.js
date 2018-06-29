@@ -55,6 +55,10 @@ new Vue({
 			}).catch(error => {
 				this.errors = error.response.data;
 			});
+		},checkKeep: function(keep){
+			this.fillKeep.id = keep.id;
+			this.fillKeep.done_TODO = keep.done_TODO;
+			console.log('mark');
 		}
 	}
 });
