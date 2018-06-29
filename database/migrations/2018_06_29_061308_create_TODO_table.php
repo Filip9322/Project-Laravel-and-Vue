@@ -13,7 +13,7 @@ class CreateTODOTable extends Migration
     public function up()
     {
         Schema::create('todosos', function (Blueprint $table) {
-            $table->increments('rowid');
+            $table->increments('id');
             $table->string('name_TODO');
             $table->index('created_at');
             $table->timestamps();

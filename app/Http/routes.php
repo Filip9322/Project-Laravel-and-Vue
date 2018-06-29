@@ -13,6 +13,8 @@
 
 Route::get('/', 'Consultas@home');
 
-Route::auth();
 
-Route::get('/home', 'HomeController@index');
+Route::resource('tasks','TaskController', ['except' => 'show']);
+//Route::auth();
+
+//Route::get('/home', 'HomeController@index');
