@@ -20,7 +20,7 @@
         </div>
         <div class="col-sm-7">
             <a href="#" class="btn btn-primary pull-right mb-4">New TODO</a>
-            <table class="table table-hover table-sprite">
+            <table class="table table-hover table-striped">
                 <thead>
                     <tr>
                         <th>Check</th>
@@ -38,7 +38,7 @@
                             <a href="#" class="btn btn-warning btm-sm">Edit</a>
                         </td>
                         <td>
-                            <a href="#" class="btn btn-danger btn-sm">Delete</a>
+                            <a href="#" class="btn btn-danger btn-sm" v-on:click.prevent="deleteKeep(keep)">Delete</a>
                         </td>
                     </tr>
                 </tbody>

@@ -13,6 +13,6 @@
 
 $factory->define(App\Todoso::class, function (Faker\Generator $faker) {
     return [
-        'rowid' => $faker->sentence,
+        'id' => $faker->sentence,
     ];
 });
