@@ -12,7 +12,7 @@ class CreateTODOTable extends Migration
      */
     public function up()
     {
-        Schema::create('TODO', function (Blueprint $table) {
+        Schema::create('todosos', function (Blueprint $table) {
             $table->increments('rowid');
             $table->string('name_TODO');
             $table->index('created_at');
@@ -27,6 +27,6 @@ class CreateTODOTable extends Migration
      */
     public function down()
     {
-        Schema::drop('TODO');
+        Schema::drop('todosos');
     }
 }

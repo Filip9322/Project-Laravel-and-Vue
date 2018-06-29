@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class TODO extends Model
+class Todoso extends Model
 {
-    //
+    protected $table = 'todosos';
 }
