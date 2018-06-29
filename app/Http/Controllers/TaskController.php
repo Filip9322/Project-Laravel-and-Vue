@@ -66,7 +66,7 @@ class TaskController extends Controller
     public function update(Request $request, $id)
     {
         $this->validate($request, [
-            'keep' => 'required',
+            'name_TODO' => 'required',
         ]);
         Todoso::find($id)->update($request->all());
         return;

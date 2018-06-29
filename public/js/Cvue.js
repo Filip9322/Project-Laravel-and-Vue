@@ -7,6 +7,7 @@ new Vue({
 	data:{
 		keeps:[],
 		newKeep: '',
+		fillKeep: {'id':'','name_TODO':''},
 		errors: []
 	},
 	methods: {
@@ -36,6 +37,23 @@ new Vue({
 				toastr.success('TODO Created');
 			}).catch(error => {
 				this.errors = error.response.data
+			});
+		},
+		editKeep: function(keep){
+			this.fillKeep.id = keep.id;
+			this.fillKeep.name_TODO = keep.name_TODO;
+			$('#edit').modal('show');
+		},
+		updateKeep: function(id){
+			var url = 'tasks/'+ id;
+			axios.put(url, this.fillKeep).then(response => {
+				this.getKeeps();
+				this.fillKeep = {'id':'','keep':''};
+				this.errors = [];
+				$('#edit').modal('hide');
+				toastr.success('Update successfully');
+			}).catch(error => {
+				this.errors = error.response.data;
 			});
 		}
 	}

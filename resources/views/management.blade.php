@@ -37,7 +37,7 @@
                         <td width="10px" >@{{ keep.id }}</td>
                         <td>@{{ keep.name_TODO}}</td>
                         <td width="10px" >
-                            <a href="#" class="btn btn-warning btm-sm">Edit</a>
+                            <a href="#" class="btn btn-warning btm-sm" v-on:click.prevent="editKeep(keep)">Edit</a>
                         </td>
                         <td>
                             <a href="#" class="btn btn-danger btn-sm" v-on:click.prevent="deleteKeep(keep)">Delete</a>
@@ -46,11 +46,12 @@
                 </tbody>
             </table>
             @include('create')
+            @include('edit')
         </div>
         <div class="col-sm-5">
-            <pre>
+            <!--pre>
                 @{{ $data }}
-            </pre>
+            </pre-->
         </div>
     </div>
 </div>
