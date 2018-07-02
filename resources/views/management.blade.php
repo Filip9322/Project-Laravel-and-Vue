@@ -33,7 +33,9 @@
                 </thead>
                 <tbody>
                     <tr v-for="keep in keeps">
-                        <td class="checkbox"><input type="checkbox" value="@{{ keep.id }}" v-on:click="checkKeep(keep)"></td>
+                        <td class="checkbox">
+                            <input id="checkbox" type="checkbox" v-bind:checked="keep.done_TODO" value="@{{ keep.id }}">
+                        </td>
                         <td width="10px" >@{{ keep.id }}</td>
                         <td>@{{ keep.name_TODO}}</td>
                         <td width="10px" >

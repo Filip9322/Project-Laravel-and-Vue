@@ -6,6 +6,7 @@ new Vue({
 	},
 	data:{
 		keeps:[],
+		mostrar: false,
 		newKeep: '',
 		fillKeep: {'id':'','name_TODO':''},
 		errors: []
